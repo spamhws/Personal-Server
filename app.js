@@ -12,4 +12,3 @@ const server = http.createServer(function (req, res) {
 
 server.listen(PORT)
 console.log(`Server started on port ${PORT}`);
-
