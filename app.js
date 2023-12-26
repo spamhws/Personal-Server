@@ -3,7 +3,7 @@
 const http = require("http")
 const fs = require('fs')
 
-const PORT = 3000
+const PORT = 3001
 
 const server = http.createServer(function (req, res) {
     res.writeHead(200, { 'content-type': 'text/html' })
