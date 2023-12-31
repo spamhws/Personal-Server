@@ -64,11 +64,26 @@
                 }
             }
         </style>
+
+        <script type="text/javascript">
+            let ws;
+            const proto = window.location.protocol === 'https:' ? 'wss' : 'ws';
+
+            ws = new WebSocket(`${proto}://${window.location.host}`);
+
+            ws.onmessage = (event) => {
+                console.log(event.data);
+            }
+        </script>
     </head>
 
     <body>
         <h1>Welcome!</h1>
         <h4>This is Yehor's Server. Cool, right?</h4>
+        <h4>P.s.: This one is upgraded to Web Sockets!</h4>
     </body>
+
+
+
 
 </html>
